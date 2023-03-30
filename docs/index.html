@@ -11,6 +11,12 @@
       padding-top: 40px;
       padding-bottom: 40px;
       background-color: #232946;
+      display: flex;
+      justify-content: center;
+    }
+    .banner{
+      display: flex;
+      justify-content: center;
     }
     .banner-image{
       width: 128px;
@@ -27,21 +33,36 @@
       object-fit: cover;
     }
     .name{
-      color:#fffffe
+      color:#fffffe;
+      display: flex;
+      justify-content: center;
+    }
+    .social-banner{
+      display: flex;
+      justify-content: space-around;
     }
     .social-icons{
       color: #b8c1ec;
-      text-decoration: none;
+      text-decoration: none;      
     }
     .link{
       background-color: #eebbc3;
+      display: flex;
+      align-items: center;
+      padding: 5px;
     }
     .link a{
       color:#232946;
       text-decoration: none;
+      text-align: center;
+      flex-grow: 1; /*we want the <a> element to occupy all of the available space to the right of the thumbnail.*/
     }
     .items{
       display: flex;
+      flex-direction: column;
+      gap: 30px;
+      max-width: 350px;
+      flex-grow: 1;
     }
   </style>
 
@@ -58,7 +79,7 @@
       Daniela Tello
     </div>
 
-    <div>
+    <div class="social-banner">
       <a href="https://www.linkedin.com/in/daniela-tello-lumbre/" target="_blank" class="social-icons">
         LinkedIn
       </a>
