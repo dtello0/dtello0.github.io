@@ -10,11 +10,38 @@
     body{
       padding-top: 40px;
       padding-bottom: 40px;
+      background-color: #232946;
     }
     .banner-image{
       width: 128px;
       height: 128px;
       object-fit: cover;
+      border-radius: 128px;
+      border: 4px solid #121629; /* a blue color that conveys professionalism */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* a subtle shadow effect for depth */
+    }
+    .thumbnail{
+      width: 48px;
+      height: 48px;
+      border-radius: 48px;
+      object-fit: cover;
+    }
+    .name{
+      color:#fffffe
+    }
+    .social-icons{
+      color: #b8c1ec;
+      text-decoration: none;
+    }
+    .link{
+      background-color: #eebbc3;
+    }
+    .link a{
+      color:#232946;
+      text-decoration: none;
+    }
+    .items{
+      display: flex;
     }
   </style>
 
@@ -22,44 +49,46 @@
 
 <body>
 
-<div class="banner">
-  <img src="Tello, Daniela.jpg" alt="Daniela Tello headshot" class="banner-image">
-</div>
+  <div class="items">
+    <div class="banner">
+      <img src="Tello, Daniela.jpg" alt="Daniela Tello headshot" class="banner-image">
+    </div>
 
-<div class="name">
-  Daniela Tello
-</div>
+    <div class="name">
+      Daniela Tello
+    </div>
 
-<div>
-  <a href="https://www.linkedin.com/in/daniela-tello-lumbre/" target="_blank">
-    LinkedIn
-  </a>
+    <div>
+      <a href="https://www.linkedin.com/in/daniela-tello-lumbre/" target="_blank" class="social-icons">
+        LinkedIn
+      </a>
 
-  <a href="https://www.instagram.com/dtellol/?hl=en" target="_blank">
-    Instagram
-  </a>
-</div>
+      <a href="https://www.instagram.com/dtellol/?hl=en" target="_blank" class="social-icons">
+        Instagram
+      </a>
+    </div>
 
-<div class="link">
-  <img
-    src="https://physicsworld.com/wp-content/uploads/2021/06/venture-capital-landscape-1267035837-iStock_Anastassiia.jpg">
+    <div class="link">
+      <img class="thumbnail"
+        src="https://physicsworld.com/wp-content/uploads/2021/06/venture-capital-landscape-1267035837-iStock_Anastassiia.jpg">
 
-  <a target="_blank" href="https://medium.com/venture-evolved/venture-capital-glossary-7b12ccf728f0">Venture Capital Glossary</a>
-</div>
+      <a target="_blank" href="https://medium.com/venture-evolved/venture-capital-glossary-7b12ccf728f0">Venture Capital Glossary</a>
+    </div>
 
-<div class="link">
-  <img src="https://images.wsj.net/im-653169?width=300&height=300&pixel_ratio=3">
+    <div class="link">
+      <img class="thumbnail" src="https://images.wsj.net/im-653169?width=300&height=300&pixel_ratio=3">
 
-  <a target="_blank"
-    href="https://www.wsj.com/podcasts/the-journal">Podcast The Journal</a>
-</div>
+      <a target="_blank"
+        href="https://www.wsj.com/podcasts/the-journal">Podcast The Journal</a>
+    </div>
 
-<div class="link">
-  <img
-    src="https://m.media-amazon.com/images/M/MV5BMzk3NWVhMzgtNjkzMy00OWYxLWIxZDktZmIyODU5NjA5ZDE3XkEyXkFqcGdeQXVyMTUyNjM1OTE4._V1_.jpg">
+    <div class="link">
+      <img
+      class="thumbnail" src="https://m.media-amazon.com/images/M/MV5BMzk3NWVhMzgtNjkzMy00OWYxLWIxZDktZmIyODU5NjA5ZDE3XkEyXkFqcGdeQXVyMTUyNjM1OTE4._V1_.jpg">
 
-  <a target="_blank" href="https://www.netflix.com/watch/81078217?source=35">In the Dark on Netflix</a>
-</div>
+      <a target="_blank" href="https://www.netflix.com/watch/81078217?source=35">In the Dark on Netflix</a>
+    </div>
+  </div>
 
 </body>
 
